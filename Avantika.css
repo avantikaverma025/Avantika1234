@@ -1,0 +1,73 @@
+/* General body style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header style */
+.header {
+    background-color: #54db58;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 40px;
+}
+
+.header .project-name {
+    margin: 0 auto; /* Center the project name */
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header .your-name{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Sidebar style */
+.sidebar {
+    width: 200px;
+    background-color: #74d0ee;
+    height: 80vh; /* Full height */
+    padding-top: 100px;
+    position: fixed;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* Main content style */
+.main-content {
+    margin-left: 220px; /* Sidebar width + gap */
+    padding: 20px;
+    min-height: calc(100vh - 80px); /* Header + Footer height adjust */
+}
+
+/* Footer style */
+.footer {
+    background-color: rgb(33, 5, 42);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+     bottom: 0;
+    margin-left: 0px; /* Align with main content */
+    width: 100%;
+    box-sizing: border-box;
+}
